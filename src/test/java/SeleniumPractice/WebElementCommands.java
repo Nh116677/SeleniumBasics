@@ -28,10 +28,16 @@ public class WebElementCommands {
 
         WebElement radioButton1 = driver.findElement(By.xpath("//input[@value='option1']"));
         boolean stateofR1 = radioButton1.isSelected();
-        System.out.println("The state of radio button selection in " + stateofR1);
+        System.out.println("The state of radio button selection is " + stateofR1);
         radioButton1.click();
         stateofR1 = radioButton1.isSelected();
         System.out.println("The state of radio button selection is " + stateofR1);
+
+        //check if radiobutton 2 is disableed
+        WebElement radioButton2 = driver.findElement(By.xpath("//input[@value='option2']"));
+        Boolean stateofR2 = radioButton2.isEnabled();
+        System.out.println("The radio button is enabled: " + stateofR2);
+
 
     }
 }

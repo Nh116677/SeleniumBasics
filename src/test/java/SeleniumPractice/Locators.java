@@ -7,6 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Locators {
     public static void main(String[] args) {
+
+        //Steps:
+        //1. Open the Chrome Browser
+        //2. Navigate to the website
+        //3. Find element with the id " first_name" and sendtext "John"
+        //4. Find element with name " last_name" and send text "Doe"
+        //5. Find element with classname " btn btn=primary"  and click on it
+
         //declare the instance
         WebDriver driver = new ChromeDriver();
 
@@ -31,15 +39,15 @@ public class Locators {
         email.sendKeys("nhu116677@gmail.com");
 
         //press the button submit
-        WebElement submitButton = driver.findElement(By.tagName("button"));
-        submitButton.click();
+        WebElement submitBtn = driver.findElement(By.tagName("button"));
+        submitBtn.click();
 
         //click on the first link
         WebElement link1=driver.findElement(By.linkText("Click Here."));
         link1.click();
 
         // click on second link
-        WebElement link2= driver.findElement(By.partialLinkText("ink"));
+        WebElement link2= driver.findElement(By.partialLinkText("Link"));
         link2.click();
 
     }
