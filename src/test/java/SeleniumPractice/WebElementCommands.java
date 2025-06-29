@@ -38,6 +38,31 @@ public class WebElementCommands {
         Boolean stateofR2 = radioButton2.isEnabled();
         System.out.println("The radio button is enabled: " + stateofR2);
 
+        //Check weather the radio button 3 is display or not
+        WebElement radioButton3 = driver.findElement(By.xpath("//input[@value='option3']"));
+        boolean displayedstateofR3 = radioButton3.isDisplayed();
+        if (displayedstateofR3) {
+            System.out.println("The radio button is displayed");
+        } else {
+            System.out.println("Radio button 3 is not displayed");
+        }
+        //Click on the toggle visibility button to display the radio button3
+        WebElement radioButtonVisibilityToggle = driver.findElement(By.xpath("//button[text()='Toggle Visibility of Option 3']"));
+        radioButtonVisibilityToggle.click();
+        displayedstateofR3 = radioButton3.isDisplayed();
+        System.out.println("The radio button 3 is displayed: " + displayedstateofR3);
+
+        //Check if the text is present in the WebElement and print it in the console
+        WebElement textElement = driver.findElement(By.xpath("//div[@id='textElement']"));
+        String text = textElement.getText();
+        System.out.println("The text in the WebElement is: " + text ) ;
+
+        //get the value of the attribute data of the element
+        WebElement attributeElement = driver.findElement(By.xpath("//div[@id='attributeElement']"));
+        String attributeValue =  attributeElement.getAttribute("data-custom-attribute");
+        System.out.println("The Value of the data attribute is: "  + attributeValue);
+
+
 
     }
 }
