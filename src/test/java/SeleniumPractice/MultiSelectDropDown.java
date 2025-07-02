@@ -18,6 +18,7 @@ public class MultiSelectDropDown {
         driver.get("https://syntaxprojects.com/basic-select-dropdown-demo.php");
 
         //Find the dropdown
+        //make sure that u are writing down the select tag
         WebElement DD = driver.findElement(By.xpath("//select[@id='multi-select']"));
 
         // check if the dropdown is multi select

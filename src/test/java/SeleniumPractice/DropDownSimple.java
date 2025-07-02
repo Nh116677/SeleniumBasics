@@ -20,7 +20,7 @@ public class DropDownSimple {
 
         //click on the dropdown to display the options
 
-        WebElement DD = driver.findElement(By.xpath("//div[@data-toggle=\"dropdown\"]"));
+        WebElement DD = driver.findElement(By.xpath("//div[@data-toggle='dropdown']"));
         DD.click();
 
         //Get all the options
