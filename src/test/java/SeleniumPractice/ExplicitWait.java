@@ -43,10 +43,11 @@ public class ExplicitWait {
         System.out.println(textMsg.getText());
 
         //Click on the button to display button
-        //WebElement button3 = driver.findElement(By.xpath("//button[@id='display_button']"));
-       // button3.click();
+       // WebElement button3 = driver.findElement(By.xpath("//button[@id='display_button']"));
+        //button3.click();
         //Wait until button display
         //wait.until(ExpectedConditions.invisibilityOf(By.xpath("//span[@id='displaybutton']"));
+
 
 
     }
