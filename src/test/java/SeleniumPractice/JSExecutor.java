@@ -28,9 +28,9 @@ public class JSExecutor {
 
 
         WebElement fileUploadTab = driver.findElement(By.xpath("//a[text()='File Upload']"));
-
         //Click Operation
-        js.executeScript("argument[0].click();", fileUploadTab);
+        js.executeScript("arguments[0].click();", fileUploadTab);
+
 
 
     }

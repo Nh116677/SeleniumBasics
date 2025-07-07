@@ -19,7 +19,9 @@ public class ActionsClass {
         //Hover the Button
         WebElement hoverbButton = driver.findElement(By.xpath("//button[text()='Hover me!']"));
 
-        //Actions action
+        Actions action = new Actions(driver);
+        action.moveToElement(hoverbButton).perform();
+
     }
 
 }
