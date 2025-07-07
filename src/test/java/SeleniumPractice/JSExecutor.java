@@ -21,10 +21,11 @@ public class JSExecutor {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].style.border='5px solid red'", button);
         //Scroll down
-        js.executeScript("window.scrollBy(0,1000");
+        js.executeScript("window.scrollBy(0,1000)");
         Thread.sleep(2000);
         //Scroll up
-        js.executeScript("window.scrollBy(0,-1000");
+        js.executeScript("window.scrollBy(0,-1000)");
+
 
         WebElement fileUploadTab = driver.findElement(By.xpath("//a[text()='File Upload']"));
 
